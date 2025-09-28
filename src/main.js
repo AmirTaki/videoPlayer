@@ -2,6 +2,8 @@ const container = document.querySelector('.container')
 const mainVideo = document.querySelector('video')
 const progressBar = document.querySelector('.progress-bar')
 const playPauseBtn = document.querySelector('.play-pause i')
+const skipBackwrad = document.querySelector('.skip-backward i')
+const skipForward = document.querySelector('.skip-forward i')
 
 playPauseBtn.addEventListener('click', () => {
     mainVideo.paused ? mainVideo.play() : mainVideo.pause()
