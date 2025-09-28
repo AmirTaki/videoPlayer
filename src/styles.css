@@ -65,6 +65,16 @@ body, .video-timer, .video-controls, .options{
     height: 100%;
     line-height: 40px;
 }
+
+.options input {
+    height: 4px;
+    max-width: 75px;
+}
+
+.options .video-timer{
+    font-size: 14px;
+    color: #efefef
+}
 .container video {
     width: 100%;
 }
