@@ -30,6 +30,10 @@ volumeBtn.addEventListener("click", () => {
     }
 })
 
+volumeSlider.addEventListener('input', (e) => {
+    mainVideo.volume = e.target.value
+})
+
 mainVideo.addEventListener('play', () => {
     playPauseBtn.classList.replace('fa-play', 'fa-pause')
 })
