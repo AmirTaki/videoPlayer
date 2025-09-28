@@ -41,12 +41,20 @@ body, .video-timer, .video-controls, .options{
     height: calc(100% + 35px)  ;
 }
 
+.video-timeline{
+    height: 7px;
+    width: 100%;
+}
+
 .video-controls {
     padding: 5px 20px 10px ;
 }
 
 .video-controls .options {
     width: 100%;
+}
+.video-controls .options:first-child {
+    justify-content: flex-start;
 }
 .video-controls .options:last-child {
     justify-content: flex-end;
