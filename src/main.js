@@ -9,6 +9,12 @@ playPauseBtn.addEventListener('click', () => {
     mainVideo.paused ? mainVideo.play() : mainVideo.pause()
 })
 
+
+skipBackwrad.addEventListener('click', () => {
+    mainVideo.currentTime -=5;     
+})
+
+
 mainVideo.addEventListener('play', () => {
     playPauseBtn.classList.replace('fa-play', 'fa-pause')
 })
