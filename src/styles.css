@@ -133,6 +133,18 @@ body, .video-timer, .video-controls, .options{
     margin: 0 5px;
     font-family: "Open sans" ;
 }
+.playback-content {
+    position: relative;
+}
+.playback-content .speed-options{
+    position: absolute;
+    bottom: 40px;
+    left: -40px;
+    list-style: none;
+    background: #fff ;
+    width: 95px;
+    border-radius: 4px;
+}
 .container video {
     width: 100%;
 }
