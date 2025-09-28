@@ -1,5 +1,6 @@
 const container = document.querySelector('.container')
 const mainVideo = document.querySelector('video')
+const progressBar = document.querySelector('.progress-bar')
 const playPauseBtn = document.querySelector('.play-pause i')
 
 playPauseBtn.addEventListener('click', () => {
@@ -9,6 +10,8 @@ playPauseBtn.addEventListener('click', () => {
 mainVideo.addEventListener('play', () => {
     playPauseBtn.classList.replace('fa-play', 'fa-pause')
 })
+
 mainVideo.addEventListener('pause', () => {
     playPauseBtn.classList.replace('fa-pause', 'fa-play')
 })
+
