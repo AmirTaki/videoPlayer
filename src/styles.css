@@ -145,6 +145,12 @@ body, .video-timer, .video-controls, .options{
     width: 95px;
     border-radius: 4px;
 }
+
+ .speed-options li  {
+    font-size: 14px;
+    padding: 5px 0 5px 15px;
+    cursor: pointer;
+ }
 .container video {
     width: 100%;
 }
