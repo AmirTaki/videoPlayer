@@ -48,6 +48,9 @@ body, .video-timer, .video-controls, .options{
 .video-controls .options {
     width: 100%;
 }
+.video-controls .options:last-child {
+    justify-content: flex-end;
+}
 .options button {
     width: 40px;
     height: 40px;
