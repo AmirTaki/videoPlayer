@@ -52,6 +52,9 @@ body, .video-timer, .video-controls, .options{
     width: 40px;
     height: 40px;
     border: none;
+    color: #fff;
+    font-size: 19px;
+    background: none;
 }
 .container video {
     width: 100%;
