@@ -17,5 +17,6 @@ mainVideo.addEventListener('pause', () => {
 
 mainVideo.addEventListener("timeupdate", (e) => {
     let {currentTime, duration} = e.target;
-    console.log(currentTime, duration)
+    let percent = (currentTime / duration) * 100;
+    progressBar.style.width = `${percent}%`
 })
