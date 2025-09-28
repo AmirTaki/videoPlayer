@@ -15,3 +15,7 @@ mainVideo.addEventListener('pause', () => {
     playPauseBtn.classList.replace('fa-pause', 'fa-play')
 })
 
+mainVideo.addEventListener("timeupdate", (e) => {
+    let {currentTime, duration} = e.target;
+    console.log(currentTime, duration)
+})
