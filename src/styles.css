@@ -7,11 +7,14 @@
 }
 
 body{
-  display: flex;
-  align-items: center ;
-  justify-content: center;
-  min-height: 100vh;
-  background: #E3F2FD;
+    min-height: 100vh;
+    background: #E3F2FD;
+}
+body, .video-timer, .video-controls, .options{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+
 }
 .container {
     position: relative;
