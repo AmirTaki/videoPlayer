@@ -1,3 +1,7 @@
 const container = document.querySelector('.container')
-const mainVideo = ocument.querySelector('video')
-const playPauseBtn = ocument.querySelector('.play-pause')
+const mainVideo = document.querySelector('video')
+const playPauseBtn = document.querySelector('.play-pause i')
+
+playPauseBtn.addEventListener('click', () => {
+    mainVideo.paused ? mainVideo.play() : mainVideo.pause()
+})
