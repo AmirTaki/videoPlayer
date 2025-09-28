@@ -141,6 +141,7 @@ body, .video-timer, .video-controls, .options{
     bottom: 40px;
     left: -40px;
     list-style: none;
+    pointer-events: none;
     background: #fff ;
     width: 95px;
     border-radius: 4px;
@@ -150,7 +151,11 @@ body, .video-timer, .video-controls, .options{
     font-size: 14px;
     padding: 5px 0 5px 15px;
     cursor: pointer;
- }
+}
+.speed-options li.active  {
+    color: #fff;
+    background: #2289ff ;
+}
 .container video {
     width: 100%;
 }
