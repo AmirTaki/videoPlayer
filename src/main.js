@@ -5,6 +5,7 @@ const playPauseBtn = document.querySelector('.play-pause i')
 const skipBackwrad = document.querySelector('.skip-backward i')
 const skipForward = document.querySelector('.skip-forward i')
 const volumeBtn = document.querySelector('.volume i ')
+const volumeSlider = document.querySelector('.left input ')
 
 playPauseBtn.addEventListener('click', () => {
     mainVideo.paused ? mainVideo.play() : mainVideo.pause()
@@ -20,11 +21,11 @@ skipForward.addEventListener('click', () => {
 
 volumeBtn.addEventListener("click", () => {
     if(!volumeBtn.classList.contains('fa-volume-high')){
-        mainVideo.volume = .5
-        volumeBtn.classList.replace("fa-volume-xmark", "fa-volume-high")
+        mainVideo.volume = 0.5;
+        replace("fa-volume-xmark", "fa-volume-high")
     }   
     else {
-        mainVideo.volume = 0
+        mainVideo.volume = 0.0
         volumeBtn.classList.replace("fa-volume-high", "fa-volume-xmark")
     }
 })
