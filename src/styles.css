@@ -40,6 +40,15 @@ body, .video-timer, .video-controls, .options{
     background: linear-gradient(to top, rgba(0, 0, 0, .7), transparent);
     height: calc(100% + 35px)  ;
 }
+
+.video-controls .options {
+    width: 100%;
+}
+.options button {
+    width: 40px;
+    height: 40px;
+    border: none;
+}
 .container video {
     width: 100%;
 }
