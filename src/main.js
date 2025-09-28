@@ -13,6 +13,9 @@ playPauseBtn.addEventListener('click', () => {
 skipBackwrad.addEventListener('click', () => {
     mainVideo.currentTime -=5;     
 })
+skipForward.addEventListener('click', () => {
+    mainVideo.currentTime +=5;     
+})
 
 
 mainVideo.addEventListener('play', () => {
