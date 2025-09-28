@@ -75,6 +75,10 @@ body, .video-timer, .video-controls, .options{
 .progress-area span, .progress-area .progress-bar::before{
     display: none;
 }
+ .video-timeline:hover .progress-area span,
+.video-timeline:hover .progress-area .progress-bar::before{
+    display: block;
+}
 
 .progress-area span{
     position: absolute;
