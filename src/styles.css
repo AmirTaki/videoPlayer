@@ -16,6 +16,9 @@ body{
 .container {
     max-width: 900px ;
     width: 98%;
+    background: #000;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .container video {
