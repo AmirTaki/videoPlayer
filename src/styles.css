@@ -10,3 +10,11 @@ body{
   min-height: 100vh;
   background: #E3F2FD;
 }
+.container {
+    max-width: 900px ;
+    width: 98%;
+}
+
+.container video {
+    width: 100%;
+}
