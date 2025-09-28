@@ -73,7 +73,14 @@ body, .video-timer, .video-controls, .options{
 
 .options .video-timer{
     font-size: 14px;
-    color: #efefef
+    color: #efefef;
+    margin-left: 15px;
+}
+
+.video-timer .separator{
+    font-size: 16px;
+    margin: 0 5px;
+    font-family: "Open sans" ;
 }
 .container video {
     width: 100%;
