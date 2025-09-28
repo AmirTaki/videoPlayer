@@ -9,3 +9,6 @@ playPauseBtn.addEventListener('click', () => {
 mainVideo.addEventListener('play', () => {
     playPauseBtn.classList.replace('fa-play', 'fa-pause')
 })
+mainVideo.addEventListener('pause', () => {
+    playPauseBtn.classList.replace('fa-pause', 'fa-play')
+})
