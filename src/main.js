@@ -18,6 +18,14 @@ skipForward.addEventListener('click', () => {
     mainVideo.currentTime +=5;     
 })
 
+volumeBtn.addEventListener("click", () => {
+    if(!volumeBtn.classList.contains('fa-volume-high')){
+        mainVideo.volume = .5
+    }   
+    else {
+        mainVideo.volume = 0
+    }
+})
 
 mainVideo.addEventListener('play', () => {
     playPauseBtn.classList.replace('fa-play', 'fa-pause')
