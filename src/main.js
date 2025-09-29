@@ -16,7 +16,6 @@ playPauseBtn.addEventListener('click', () => {
     mainVideo.paused ? mainVideo.play() : mainVideo.pause()
 })
 
-
 picInPicBtn.addEventListener("click", (e) => {
     mainVideo.requestPictureInPicture();
 })
@@ -29,6 +28,11 @@ fullScreenBtn.addEventListener("click", () => {
   }
   fullScreenBtn.classList.replace('fa-expand', 'fa-compress')
   container.requestFullscreen();
+})
+
+
+videoTimeline.addEventListener('click', (e) => {
+   let timelineWidth = e.target.clientWidth 
 })
 
 skipBackwrad.addEventListener('click', () => {
