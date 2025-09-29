@@ -138,4 +138,8 @@ videoTimeline.addEventListener('mousemove', (e) => {
     const progressTime = videoTimeline.querySelector("span")
     let offsetX = e.offsetX;
     progressTime.style.left = `${offsetX}px`
+    let timelineWidth = e.target.clientWidth 
+    let percent = (e.offsetX / timelineWidth) * mainVideo.duration;
+    progressTime.innerText = formatTime(percent)
+
 })
