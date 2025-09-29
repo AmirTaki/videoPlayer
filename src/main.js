@@ -8,6 +8,7 @@ const volumeBtn = document.querySelector('.volume i ')
 const volumeSlider = document.querySelector('.left input ')
 const speedBtn = document.querySelector('.playback-speed span')
 const speedOptions = document.querySelector('.speed-options')
+const picInPicBtn = document.querySelector('.pic-in-pic')
 
 playPauseBtn.addEventListener('click', () => {
     mainVideo.paused ? mainVideo.play() : mainVideo.pause()
