@@ -32,6 +32,9 @@ volumeBtn.addEventListener("click", () => {
 
 volumeSlider.addEventListener('input', (e) => {
     mainVideo.volume = e.target.value
+    if(e.target.value === 0){
+        volumeBtn.classList.replace("fa-volume-high", "fa-volume-xmark")
+    }
 })
 
 mainVideo.addEventListener('play', () => {
