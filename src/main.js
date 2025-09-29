@@ -133,3 +133,7 @@ videoTimeline.addEventListener('mousedown', (e) => {
 videoTimeline.addEventListener('mouseup', (e) => {
     videoTimeline.removeEventListener('mousemove', draggableProgressBar)
 })
+
+videoTimeline.addEventListener('mousemove', (e) => {
+    const progressTime = videoTimeline.querySelector("span")
+})
