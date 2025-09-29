@@ -8,12 +8,16 @@ const volumeBtn = document.querySelector('.volume i ')
 const volumeSlider = document.querySelector('.left input ')
 const speedBtn = document.querySelector('.playback-speed span')
 const speedOptions = document.querySelector('.speed-options')
-const picInPicBtn = document.querySelector('.pic-in-pic')
+const picInPicBtn = document.querySelector('.pic-in-pic span')
 
 playPauseBtn.addEventListener('click', () => {
     mainVideo.paused ? mainVideo.play() : mainVideo.pause()
 })
 
+
+picInPicBtn.addEventListener("click", (e) => {
+    mainVideo.requestPictureInPicture();
+})
 
 skipBackwrad.addEventListener('click', () => {
     mainVideo.currentTime -=5;     
