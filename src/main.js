@@ -41,6 +41,10 @@ volumeSlider.addEventListener("input", e => {
     volumeBtn.classList.replace("fa-volume-xmark", "fa-volume-high");
 });
 
+speedBtn.addEventListener('click',() => {
+    speedOptions.classList.toggle("show")
+})
+
 mainVideo.addEventListener('play', () => {
     playPauseBtn.classList.replace('fa-play', 'fa-pause')
 })
