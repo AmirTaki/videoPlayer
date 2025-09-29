@@ -115,3 +115,7 @@ mainVideo.addEventListener("timeupdate", (e) => {
     progressBar.style.width = `${percent}%`
     currentVideoTime.innerText = formatTime(currentTime)
 })
+
+videoDuration.addEventListener("loadeddata", () => {
+    
+})
