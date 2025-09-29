@@ -6,6 +6,8 @@ const skipBackwrad = document.querySelector('.skip-backward i')
 const skipForward = document.querySelector('.skip-forward i')
 const volumeBtn = document.querySelector('.volume i ')
 const volumeSlider = document.querySelector('.left input ')
+const playbackSpeed = document.querySelector('.playback-speed span')
+const volumeSlider = document.querySelector('.left input ')
 
 playPauseBtn.addEventListener('click', () => {
     mainVideo.paused ? mainVideo.play() : mainVideo.pause()
