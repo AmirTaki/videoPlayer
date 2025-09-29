@@ -90,8 +90,10 @@ mainVideo.addEventListener('pause', () => {
     playPauseBtn.classList.replace('fa-pause', 'fa-play')
 })
 
-const formatTime = () => {
-    
+const formatTime = (time) => {
+    let seconds = Math.floor(time % 60)        
+    let minutes = Math.floor(time / 60)  % 60     
+    let hours = Math.floor(time / 3600)        
 }
 
 mainVideo.addEventListener("timeupdate", (e) => {
