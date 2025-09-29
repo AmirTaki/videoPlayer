@@ -30,15 +30,13 @@ volumeBtn.addEventListener("click", () => {
     }
 })
 
-volumeSlider.addEventListener('input', (e) => {
-    mainVideo.volume = e.target.value
-    if(e.target.value === 0){
-        volumeBtn.classList.replace("fa-volume-high", "fa-volume-xmark")
+volumeSlider.addEventListener("input", e => {
+    mainVideo.volume = e.target.value;
+    if(e.target.value == 0) {
+        return volumeBtn.classList.replace("fa-volume-high", "fa-volume-xmark");
     }
-    else {
-        volumeBtn.classList.replace("fa-volume-xmark", "fa-volume-high")
-    }
-})
+    volumeBtn.classList.replace("fa-volume-xmark", "fa-volume-high");
+});
 
 mainVideo.addEventListener('play', () => {
     playPauseBtn.classList.replace('fa-play', 'fa-pause')
