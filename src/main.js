@@ -120,6 +120,11 @@ mainVideo.addEventListener("loadeddata", (e) => {
     videoDuration.innerText = formatTime(mainVideo.duration);
 })
 
+const draggableProgressBar = () => {
+    let timelineWidth = e.target.clientWidth 
+    mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration
+}
+
 videoTimeline.addEventListener('mousedown', (e) => {
     videoTimeline.addEventListener('mousemove', draggableProgressBar)
 })
