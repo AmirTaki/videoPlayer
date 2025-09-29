@@ -22,7 +22,7 @@ skipForward.addEventListener('click', () => {
 volumeBtn.addEventListener("click", () => {
     if(!volumeBtn.classList.contains('fa-volume-high')){
         mainVideo.volume = 0.5;
-        replace("fa-volume-xmark", "fa-volume-high")
+        volumeBtn.classList.replace("fa-volume-xmark", "fa-volume-high")
     }   
     else {
         mainVideo.volume = 0.0
@@ -34,6 +34,9 @@ volumeSlider.addEventListener('input', (e) => {
     mainVideo.volume = e.target.value
     if(e.target.value === 0){
         volumeBtn.classList.replace("fa-volume-high", "fa-volume-xmark")
+    }
+    else {
+
     }
 })
 
