@@ -25,6 +25,11 @@ body, .video-timer, .video-controls, .options{
     overflow: hidden;
 }
 
+.container.fullscreen{
+    max-width: 100%;
+    width: 100%;
+}
+
 .wrapper{
     position: absolute  ;
     left : 0;
