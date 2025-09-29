@@ -26,6 +26,8 @@ fullScreenBtn.addEventListener("click", () => {
     fullScreenBtn.classList.replace('fa-compress', 'fa-expand')
     return document.exitFullscreen
   }
+  fullScreenBtn.classList.replace('fa-expand', 'fa-compress')
+  container.requestFullscreen;
 })
 
 skipBackwrad.addEventListener('click', () => {
