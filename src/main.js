@@ -45,6 +45,10 @@ speedBtn.addEventListener('click',() => {
     speedOptions.classList.toggle("show")
 })
 
+speedOptions.querySelectorAll('li').forEach((option) => {
+    
+})
+
 document.addEventListener("click", (e) => {
     if (e.target.tagName !== 'SPAN' || e.target.className !== "material-symbols-rounded"){
         speedOptions.classList.remove("show")
