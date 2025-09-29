@@ -117,5 +117,5 @@ mainVideo.addEventListener("timeupdate", (e) => {
 })
 
 mainVideo.addEventListener("loadeddata", (e) => {
-    videoDuration.innerText = e.target.duration;
+    videoDuration.innerText = formatTime(mainVideo.duration);
 })
