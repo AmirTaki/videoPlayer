@@ -2,7 +2,7 @@ const container = document.querySelector('.container')
 const mainVideo = document.querySelector('video')
 const progressBar = document.querySelector('.progress-bar')
 const videoTimeline = document.querySelector('.video-timeline')
-const currentVideoTime = document.querySelector('current-time')
+const currentVideoTime = document.querySelector('.current-time')
 const playPauseBtn = document.querySelector('.play-pause i')
 const skipBackwrad = document.querySelector('.skip-backward i')
 const skipForward = document.querySelector('.skip-forward i')
@@ -90,8 +90,13 @@ mainVideo.addEventListener('pause', () => {
     playPauseBtn.classList.replace('fa-pause', 'fa-play')
 })
 
+const formatTime = () => {
+    
+}
+
 mainVideo.addEventListener("timeupdate", (e) => {
     let {currentTime, duration} = e.target;
     let percent = (currentTime / duration) * 100;
     progressBar.style.width = `${percent}%`
+    currentVideoTime.innerText = formatTime(currentTime)
 })
