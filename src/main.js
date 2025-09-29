@@ -120,8 +120,9 @@ mainVideo.addEventListener("loadeddata", (e) => {
     videoDuration.innerText = formatTime(mainVideo.duration);
 })
 
-const draggableProgressBar = () => {
+const draggableProgressBar = (e) => {
     let timelineWidth = e.target.clientWidth 
+    progressBar.style.width = `${e.offsetX}px`
     mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration
 }
 
