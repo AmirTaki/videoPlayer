@@ -150,7 +150,7 @@ body, .video-timer, .video-controls, .options{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: opacity 0.13s ease;
 }
-.playback-content:hover   .speed-options{
+.playback-content   .speed-options.show{
     opacity: 1;
     pointer-events: auto;
 }
