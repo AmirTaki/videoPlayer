@@ -22,6 +22,10 @@ picInPicBtn.addEventListener("click", (e) => {
 
 fullScreenBtn.addEventListener("click", () => {
   container.classList.toggle('fullscreen')  
+  if(document.fullscreenElement){
+    fullScreenBtn.classList.replace('fa-compress', 'fa-expand')
+    return document.exitFullscreen
+  }
 })
 
 skipBackwrad.addEventListener('click', () => {
