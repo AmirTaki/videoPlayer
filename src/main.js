@@ -14,9 +14,10 @@ const speedOptions = document.querySelector('.speed-options')
 const picInPicBtn = document.querySelector('.pic-in-pic span')
 const fullScreenBtn = document.querySelector('.fullscreen i')
 
+let timer ;
 const hideControls = () => {
     if(mainVideo.paused) return;
-    setTimout(() => {
+    timer = setTimout(() => {
         container.classList.remove('show-controls')
     }, 3000)
 }
@@ -25,6 +26,8 @@ hideControls()
 
 container.addEventListener("mousemove", () => {
     container.classList.add('show-controls')
+    clearTimeout(timer)
+    hideControls()
 })
 
 
