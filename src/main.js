@@ -124,6 +124,7 @@ const draggableProgressBar = (e) => {
     let timelineWidth = e.target.clientWidth 
     progressBar.style.width = `${e.offsetX}px`
     mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration
+    currentVideoTime.innerText = formatTime(mainVideo.currentTime)
 }
 
 videoTimeline.addEventListener('mousedown', (e) => {
