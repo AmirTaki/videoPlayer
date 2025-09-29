@@ -9,6 +9,7 @@ const volumeSlider = document.querySelector('.left input ')
 const speedBtn = document.querySelector('.playback-speed span')
 const speedOptions = document.querySelector('.speed-options')
 const picInPicBtn = document.querySelector('.pic-in-pic span')
+const fullScreenBtn = document.querySelector('.fullscreen i')
 
 playPauseBtn.addEventListener('click', () => {
     mainVideo.paused ? mainVideo.play() : mainVideo.pause()
@@ -17,6 +18,10 @@ playPauseBtn.addEventListener('click', () => {
 
 picInPicBtn.addEventListener("click", (e) => {
     mainVideo.requestPictureInPicture();
+})
+
+fullScreenBtn.addEventListener("click", () => {
+  container.classList.toggle('fullscreen')  
 })
 
 skipBackwrad.addEventListener('click', () => {
