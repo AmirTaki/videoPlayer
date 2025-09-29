@@ -17,9 +17,9 @@ const fullScreenBtn = document.querySelector('.fullscreen i')
 let timer ;
 const hideControls = () => {
     if(mainVideo.paused) return;
-    timer = setTimout(() => {
-        container.classList.remove('show-controls')
-    }, 3000)
+    timer = setTimeout(() => {
+        container.classList.remove("show-controls");
+    }, 3000);
 }
 hideControls()
 
