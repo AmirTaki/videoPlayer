@@ -48,6 +48,8 @@ speedBtn.addEventListener('click',() => {
 speedOptions.querySelectorAll('li').forEach((option) => {
   option.addEventListener('click', (e) => {
     mainVideo.playbackRate = option.dataset.speed;
+    speedOptions.querySelector('.active').classList.remove('acitve')
+    option.classList.add('active')
   })
 })
 
