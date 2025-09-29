@@ -16,10 +16,10 @@ const fullScreenBtn = document.querySelector('.fullscreen i')
 
 const hideControls = () => {
     setTimeout(() => {
-
+        container.classList.remove('show-controls')
     }, 3000)
 }
-
+hideControls()
 playPauseBtn.addEventListener('click', () => {
     mainVideo.paused ? mainVideo.play() : mainVideo.pause()
 })
