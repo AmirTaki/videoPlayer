@@ -1,6 +1,7 @@
 const container = document.querySelector('.container')
 const mainVideo = document.querySelector('video')
 const progressBar = document.querySelector('.progress-bar')
+const videoTimeline = document.querySelector('.video-timeline')
 const playPauseBtn = document.querySelector('.play-pause i')
 const skipBackwrad = document.querySelector('.skip-backward i')
 const skipForward = document.querySelector('.skip-forward i')
