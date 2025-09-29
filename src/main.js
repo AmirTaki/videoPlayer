@@ -14,6 +14,12 @@ const speedOptions = document.querySelector('.speed-options')
 const picInPicBtn = document.querySelector('.pic-in-pic span')
 const fullScreenBtn = document.querySelector('.fullscreen i')
 
+const hideControls = () => {
+    setTimeout(() => {
+
+    }, 3000)
+}
+
 playPauseBtn.addEventListener('click', () => {
     mainVideo.paused ? mainVideo.play() : mainVideo.pause()
 })
