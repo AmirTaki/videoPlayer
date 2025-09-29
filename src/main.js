@@ -24,10 +24,10 @@ fullScreenBtn.addEventListener("click", () => {
   container.classList.toggle('fullscreen')  
   if(document.fullscreenElement){
     fullScreenBtn.classList.replace('fa-compress', 'fa-expand')
-    return document.exitFullscreen
+    return document.exitFullscreen()
   }
   fullScreenBtn.classList.replace('fa-expand', 'fa-compress')
-  container.requestFullscreen;
+  container.requestFullscreen();
 })
 
 skipBackwrad.addEventListener('click', () => {
