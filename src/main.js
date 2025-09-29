@@ -33,6 +33,7 @@ fullScreenBtn.addEventListener("click", () => {
 
 videoTimeline.addEventListener('click', (e) => {
    let timelineWidth = e.target.clientWidth 
+   mainVideo.currentTime = (e.offsetX / timelineWidth) * mainVideo.duration
 })
 
 skipBackwrad.addEventListener('click', () => {
