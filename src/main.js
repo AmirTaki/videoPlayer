@@ -15,11 +15,19 @@ const picInPicBtn = document.querySelector('.pic-in-pic span')
 const fullScreenBtn = document.querySelector('.fullscreen i')
 
 const hideControls = () => {
-    setTimeout(() => {
+    if(mainVideo.paused) return;
+    setTimout(() => {
         container.classList.remove('show-controls')
     }, 3000)
 }
 hideControls()
+
+
+container.addEventListener("mousemove", () => {
+    container.classList.add('show-controls')
+})
+
+
 playPauseBtn.addEventListener('click', () => {
     mainVideo.paused ? mainVideo.play() : mainVideo.pause()
 })
