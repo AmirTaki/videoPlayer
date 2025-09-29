@@ -36,7 +36,7 @@ volumeSlider.addEventListener('input', (e) => {
         volumeBtn.classList.replace("fa-volume-high", "fa-volume-xmark")
     }
     else {
-
+        volumeBtn.classList.replace("fa-volume-xmark", "fa-volume-high")
     }
 })
 
