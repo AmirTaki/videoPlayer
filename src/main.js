@@ -129,3 +129,6 @@ const draggableProgressBar = (e) => {
 videoTimeline.addEventListener('mousedown', (e) => {
     videoTimeline.addEventListener('mousemove', draggableProgressBar)
 })
+videoTimeline.addEventListener('mouseup', (e) => {
+    videoTimeline.removeEventListener('mousemove', draggableProgressBar)
+})
