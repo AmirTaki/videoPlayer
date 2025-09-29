@@ -119,3 +119,7 @@ mainVideo.addEventListener("timeupdate", (e) => {
 mainVideo.addEventListener("loadeddata", (e) => {
     videoDuration.innerText = formatTime(mainVideo.duration);
 })
+
+videoTimeline.addEventListener('mousedown', (e) => {
+    videoTimeline.addEventListener('mousemove', draggableProgressBar)
+})
