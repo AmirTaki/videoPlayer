@@ -45,6 +45,12 @@ speedBtn.addEventListener('click',() => {
     speedOptions.classList.toggle("show")
 })
 
+document.addEventListener("click", (e) => {
+    if (e.target.tagName !== 'SPAN' || e.target.className !== "material-symbols-rounded"){
+        speedOptions.classList.remove("show")
+    } 
+})
+
 mainVideo.addEventListener('play', () => {
     playPauseBtn.classList.replace('fa-play', 'fa-pause')
 })
